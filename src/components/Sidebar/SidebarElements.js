@@ -45,7 +45,7 @@ export const SidebarMenu = styled.ul`
     @media screen and (max-width: 480px) {
         grid-template-rows: repeat (6, 60px);
 }
-`
+`;
 
 export const SidebarLink = styled(LinkS)`
     display: flex;
@@ -63,4 +63,4 @@ export const SidebarLink = styled(LinkS)`
         color: #01bf71;
         transition: 0.2s ease-in-out;
     }
-`
+`;
