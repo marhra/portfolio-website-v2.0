@@ -30,7 +30,14 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-    color: #fff;
+    background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
     justify-content: flex-start;
     cursor: pointer;
     font-size: 1.7rem;
@@ -83,7 +90,7 @@ export const NavLinks = styled(LinkS)`
     font-size: 1.2rem;
 
     &.active {
-        border-bottom: 3px solid #01bf71;
+        border-bottom: 3px solid #DD2476;
     }
 `;
 
